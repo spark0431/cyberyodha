@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cyber Frontier — SR | Cybersecurity & Network Security</title>
+  <meta name="description" content="Cybersecurity portfolio: ethical hacking labs, network security, tools, and tutorials." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --card:#121821;
+      --text:#e6edf3;
+      --muted:#9fb0c3;
+      --accent:#3ddc97;
+      --accent2:#7aa2f7;
+      --border:#1f2a37;
+      --danger:#ff6b6b;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:var(--accent2);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:24px 0;border-bottom:1px solid var(--border)}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:40px;height:40px;border-radius:8px;background:linear-gradient(135deg,var(--accent2),var(--accent));display:flex;align-items:center;justify-content:center;font-weight:700;color:#0b0f14}
+    nav{display:flex;gap:18px;flex-wrap:wrap}
+    nav a{padding:8px 12px;border:1px solid var(--border);border-radius:8px;background:rgba(255,255,255,0.02)}
+    .hero{display:grid;grid-template-columns:1.2fr 0.8fr;gap:24px;padding:32px 0}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px}
+    h1{font-size:2rem;margin:0 0 8px}
+    .subtitle{color:var(--muted);margin:0 0 16px}
+    .tags{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}
+    .tag{font-size:12px;padding:6px 10px;border:1px solid var(--border);border-radius:999px;background:#0e141b;color:var(--muted)}
+    .cta{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+    .btn{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:#0e141b;color:var(--text);font-weight:600}
+    .btn.primary{background:linear-gradient(135deg,var(--accent2),var(--accent));color:#0b0f14;border:none}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .section-title{font-size:1.4rem;margin:0 0 12px}
+    .item-title{font-weight:700;margin:0 0 6px}
+    .item-meta{color:var(--muted);font-size:14px;margin-bottom:10px}
+    ul{margin:0;padding-left:18px}
+    li{margin:6px 0}
+    .footer{padding:24px 0;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
+    .badge{display:inline-block;padding:6px 10px;border-radius:8px;background:#0e141b;border:1px solid var(--border);color:var(--muted);font-size:12px}
+    .highlight{color:var(--accent)}
+    .danger{color:var(--danger)}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width:640px){
+      .grid{grid-template-columns:1fr}
+      header{flex-direction:column;align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">CF</div>
+        <div>
+          <strong>Cyber Frontier — SR</strong><br>
+          <span class="badge">Cybersecurity • Network Security • Ethical Labs</span>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#labs">Labs</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h1>Defending systems with clarity and hands‑on rigor</h1>
+        <p class="subtitle">Network Security Engineer turned cybersecurity educator. I build practical labs, break down complex topics, and teach ethical hacking the right way.</p>
+        <div class="tags">
+          <span class="tag">Kali Linux</span>
+          <span class="tag">Burp Suite</span>
+          <span class="tag">Wireshark</span>
+          <span class="tag">MobSF</span>
+          <span class="tag">BGP/OSPF/MPLS</span>
+          <span class="tag">Firewalls</span>
+        </div>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="section-title">Latest highlights</div>
+        <ul>
+          <li><span class="highlight">New video:</span> QR Code Security—Quishing explained with safe demos</li>
+          <li>Published: Mobile app traffic interception with Burp Suite</li>
+          <li>Lab: Static analysis of Android APKs using MobSF</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="card">
+      <div class="section-title">About</div>
+      <p>I’m SR, focused on ethical hacking education and practical network security. I design safe labs, analyze mobile apps, and translate complex security concepts into clear, actionable lessons.</p>
+      <p><span class="badge">Mission:</span> Teach ethical hacking with integrity—no shortcuts, no unsafe advice, just real skills.</p>
+    </section>
+
+    <section id="projects" class="card">
+      <div class="section-title">Projects</div>
+      <div class="grid">
+        <div class="card">
+          <div class="item-title">Mobile Security Lab</div>
+          <div class="item-meta">MobSF • Frida • Burp Suite</div>
+          <ul>
+            <li>Static/dynamic analysis of test apps</li>
+            <li>Traffic interception and TLS validation</li>
+            <li>Reporting with remediation guidance</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="item-title">Network Defense Playbooks</div>
+          <div class="item-meta">Firewalls • VPN • BGP</div>
+          <ul>
+            <li>Zero‑trust segmentation and policy design</li>
+            <li>Secure routing and HA architectures</li>
+            <li>Incident response runbooks</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="item-title">Cyber Frontier Tutorials</div>
+          <div class="item-meta">YouTube • Bilingual</div>
+          <ul>
+            <li>Safe ethical hacking labs</li>
+            <li>OWASP Top 10 explained</li>
+            <li>Tool deep dives (Kali, Wireshark)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="labs" class="card">
+      <div class="section-title">Featured labs</div>
+      <div class="grid">
+        <div class="card">
+          <div class="item-title">QR Code Security Demo</div>
+          <div class="item-meta">Kali • qrencode • iOS</div>
+          <ul>
+            <li>Generate safe QR codes (URL/Wi‑Fi)</li>
+            <li>Observe iOS prompts and protections</li>
+            <li class="danger">No malicious installs—education only</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="item-title">Burp Suite Proxy</div>
+          <div class="item-meta">HTTPS interception</div>
+          <ul>
+            <li>Configure device proxy to Kali</li>
+            <li>Inspect API calls and headers</li>
+            <li>Identify insecure comms</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="item-title">MobSF Static Analysis</div>
+          <div class="item-meta">APK/IPA review</div>
+          <ul>
+            <li>Permissions, storage, crypto checks</li>
+            <li>Hardcoded secrets detection</li>
+            <li>Actionable remediation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="card">
+      <div class="section-title">Skills</div>
+      <div class="grid">
+        <div class="card">
+          <div class="item-title">Security & Testing</div>
+          <ul>
+            <li>Penetration testing (ethical)</li>
+            <li>Threat modeling & reporting</li>
+            <li>Secure architecture reviews</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="item-title">Networking</div>
+          <ul>
+            <li>Firewalls, VPNs, load balancers</li>
+            <li>BGP, OSPF, MPLS</li>
+            <li>Wireshark & packet analysis</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="item-title">Tooling</div>
+          <ul>
+            <li>Kali Linux, Burp Suite, MobSF</li>
+            <li>Frida, Objection (labs)</li>
+            <li>Linux, Bash, Python</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <div class="section-title">Contact</div>
+      <p>Open to collaborations, tutorials, and security education projects.</p>
+      <ul>
+        <li><strong>Email:</strong> your.email@example.com</li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
+        <li><strong>YouTube:</strong> <a href="https://youtube.com/@CyberFrontier" target="_blank">youtube.com/@CyberFrontier</a></li>
+        <li><strong>Location:</strong> Mohanlal Ganj, UP, India</li>
+      </ul>
+    </section>
+
+    <div class="footer">
+      © <span id="year"></span> Cyber Frontier — SR. Built with HTML/CSS. Hosted on GitHub Pages. Stay ethical—skills over shortcuts.
+    </div>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
